@@ -24,7 +24,7 @@ add('writable_dirs', []);
 
 host('149.210.193.52')
     ->user('deployer')
-    ->identityFile('~/.ssh/deployerkey')
+    ->IdentityFile('~/.ssh/deployerkey2')
     ->set('deploy_path', '/var/www/richenkim.nl');
 
 // Tasks
