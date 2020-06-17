@@ -7,7 +7,7 @@ require 'recipe/laravel.php';
 set('application', 'richenkim');
 
 // Project repository
-set('repository', 'git@git.com:riverknl/richenkim.git');
+set('repository', 'riverknl@git.com:riverknl/richenkim.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -25,7 +25,7 @@ add('writable_dirs', []);
 host('149.210.193.52')
     ->user('deployer')
     ->identityFile('~/.ssh/deployerkey')
-    ->set('deploy_path', '/var/www/richenkim.nl/');
+    ->set('deploy_path', '/var/www/richenkim.nl');
 
 // Tasks
 
