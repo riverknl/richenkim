@@ -40,9 +40,6 @@
                         <li class="nav-item">
                             <a class="nav-link " href="{{ url('/dashboard/guests') }}">Gasten</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="{{ url('/dashboard/program') }}">Programma</a>
-                        </li>
                     </ul>
                 @endauth
 
