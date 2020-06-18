@@ -17,6 +17,7 @@ class Guest extends Model
         'token',
         'special_guest',
         'is_coming',
+        'token',
     ];
 
     public function getFullNameAttribute()

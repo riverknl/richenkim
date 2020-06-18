@@ -122,6 +122,7 @@ class GuestController extends Controller
             'city' => '',
             'is_coming' => '',
             'special_guest' => '',
+            'token' => '',
         ]);
 
         $is_coming = $request->is_coming == 'on' ? 1 : 0;
@@ -136,6 +137,7 @@ class GuestController extends Controller
         $guest->city  = $request->city;
         $guest->is_coming  = $is_coming;
         $guest->special_guest  = $special_guest;
+        $guest->token = $request->token;
         $guest->save();
 
         return redirect('/dashboard/guests/' . $guest->id )->with('status', ['alert' => 'success', 'text' => 'Gast is succesvol opgeslagen.']);

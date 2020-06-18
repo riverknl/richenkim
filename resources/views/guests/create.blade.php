@@ -57,6 +57,10 @@
                             <div class="form-group">
                                 <button class="btn btn-primary" type="submit">Opslaan</button>
                             </div>
+                            <div class="form-group">
+                                <label>RSVP Token</label>
+                                <input class="form-control" name="token" value="{{ old('token') }}">
+                            </div>
                         </form>
                     </div>
                 </div>
