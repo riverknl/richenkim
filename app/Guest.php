@@ -15,9 +15,9 @@ class Guest extends Model
         'postcode',
         'city',
         'token',
+        'description',
         'special_guest',
         'is_coming',
-        'token',
     ];
 
     public function getFullNameAttribute()

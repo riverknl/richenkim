@@ -47,10 +47,10 @@
                                        data-width="200" data-height="25" data-id="{{ $guest->id }}">
                             </div>
 
-                            @if($guest->special_guest == 1)
+                            @if($guest->special_guest)
                                 <div id="info_{{ $guest->id }}" class="form-group">
-                                    <label>Heb je allergieën? Laat het ons weten.</label>
-                                    <textarea class="form-control"></textarea>
+                                    <label>Omdat je een dag gast bent ben je ook uitgenodigd voor het diner. Heb je allergieën? Laat het ons weten.</label>
+                                    <textarea class="form-control" name="description[{{ $guest->id }}]">{{ $guest->description }}</textarea>
                                 </div>
                             @endif
                         </div>

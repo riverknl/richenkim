@@ -2,13 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Guest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class PagesController extends Controller
 {
 
     public function programma()
     {
+        $token = session('token');
+        if($token !== null)
+        {
+            $guest = Guest::where('token', $token)->first();
+            return view('pages.programma', compact('guest'));
+        }
+
         return view('pages.programma');
     }
 
@@ -19,7 +28,14 @@ class PagesController extends Controller
 
     public function cadeauTips()
     {
-        return view('pages.cadeautips');
+        $token = session('token');
+        if($token !== null)
+        {
+            return view('pages.cadeautips');
+
+        }
+
+        return redirect('/');
     }
 
     public function contact()

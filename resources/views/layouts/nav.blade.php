@@ -17,9 +17,11 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/praktische-informatie') }}">Praktische informatie</a>
             </li>
+            @if(session('token') !== null)
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/cadeau-tips') }}">Cadeau tips</a>
             </li>
+            @endif
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
             </li>

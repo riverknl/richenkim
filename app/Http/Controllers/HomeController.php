@@ -33,8 +33,7 @@ class HomeController extends Controller
 
         } else
         {
-            $guests = [];
-            return view('home', compact('guests'));
+            return view('pages.home');
         }
     }
 

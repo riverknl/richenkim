@@ -19,6 +19,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::post('/rsvp/check', 'RsvpController@check');
 Route::get('/rsvp', 'RsvpController@index');
 Route::post('/rsvp/opslaan', 'RsvpController@update');
+Route::get('/rsvp/lost', 'RsvpController@lost');
 
 // Pagina's
 Route::get('/programma', 'PagesController@programma');

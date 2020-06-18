@@ -25,29 +25,14 @@
         </div>
 
     </div>
-    @if (session('token'))
-        @include('layouts.nav')
-        @yield('content')
-    @else
-        <div class="row justify-content-center">
-            <div class="col-md-4">
+    @include('layouts.nav')
 
-                <form method="POST" action="{{ url('/rsvp/check') }}">
-                    @csrf
-                    <div class="form-group">
-                        <label>Vul hier je RSVP code in.</label>
-                        <input class="form-control" name="token" type="text">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary">Inloggen</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    @endif
+    @yield('content')
 
 </div>
-<a href="/destroySession">destroy</a>
+@if(session('token'))
+    <a href="/destroySession">destroy</a>
+@endif
 @stack('js')
 </body>
 </html>

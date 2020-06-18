@@ -17,9 +17,16 @@ class RsvpController extends Controller
     {
         $token = session('token');
 
-        $guests = Guest::where('token', $token)->get();
 
-        return view('rsvp.index', compact('guests', 'token'));
+        if ($token !== null) {
+            $guests = Guest::where('token', $token)->get();
+
+            return view('rsvp.index', compact('guests', 'token'));
+
+        } else {
+            return view('pages.rsvp');
+
+        }
     }
 
     /**
@@ -85,11 +92,23 @@ class RsvpController extends Controller
                 foreach ($guests as $guest) {
                     // Check of het gasten id in de is_coming array voorkomt als key.
                     if (array_key_exists($guest->id, $request->is_coming)) {
+
                         $guest->is_coming = 1;
+
+                        // Check of de gast een special_guest is en of die iets heeft ingevuld.
+                        if ($guest->special_guest) {
+                            if (array_key_exists($guest->id, $request->description)) {
+                                $guest->description = $request->description[$guest->id];
+                            }
+                        }
+
                         $guest->save();
+
                     } else {
+
                         $guest->is_coming = 0;
                         $guest->save();
+
                     }
                 }
 
@@ -127,14 +146,17 @@ class RsvpController extends Controller
 
         $guests = Guest::where('token', $request->token)->get();
 
-        if($guests->count() > 0)
-        {
+        if ($guests->count() > 0) {
             $request->session()->put('token', $request->token);
 
             return redirect('/');
-        } else
-        {
+        } else {
             return redirect('/')->withError('Geen geldige RSVP code.');
         }
+    }
+
+    public function lost(Request $request)
+    {
+        return redirect('/');
     }
 }
