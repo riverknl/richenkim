@@ -11,10 +11,7 @@
             <hr>
             <div class="card">
                 <div class="card-body">
-                    <h2>Ceremonie meester</h2>
-                    <p>
-                        Marieke Verkerk
-                    </p>
+
                 </div>
             </div>
         </div>
