@@ -55,6 +55,11 @@
                                 <label>Dag gast</label>
                                 <input class="form-check" type="checkbox" name="special_guest" {{ $guest->special_guest ? 'checked' : '' }}>
                             </div>
+
+                            <div class="form-group">
+                                <label>RSVP Token</label>
+                                <input class="form-control" name="token" value="{{ old('token', $guest->token) }}">
+                            </div>
                             <div class="form-group">
                                 <button class="btn btn-primary" type="submit">Opslaan</button>
                             </div>
