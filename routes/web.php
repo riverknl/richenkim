@@ -50,3 +50,6 @@ Route::put('/dashboard/program/{program}', 'ProgramController@update');
 Route::delete('/dashboard/program/{program}', 'ProgramController@destroy');
 
 Route::get('/destroySession', 'HomeController@destroySession');
+
+
+Route::get('/test', 'TestController@index');
