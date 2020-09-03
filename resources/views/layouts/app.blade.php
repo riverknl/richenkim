@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a class="nav-link " href="{{ url('/dashboard/guests') }}">Gasten</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{ url('/dashboard/pages') }}">Pagina's</a>
+                        </li>
                     </ul>
                 @endauth
 
@@ -93,5 +96,7 @@
             @yield('content')
         </main>
     </div>
+    @stack('js')
+
 </body>
 </html>

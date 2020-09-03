@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Guest;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
+
 
 class PagesController extends Controller
 {
@@ -12,9 +11,11 @@ class PagesController extends Controller
     public function programma()
     {
         $token = session('token');
+
         if($token !== null)
         {
             $guest = Guest::where('token', $token)->first();
+
             return view('pages.programma', compact('guest'));
         }
 

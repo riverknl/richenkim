@@ -155,8 +155,4 @@ class RsvpController extends Controller
         }
     }
 
-    public function lost(Request $request)
-    {
-        return redirect('/');
-    }
 }

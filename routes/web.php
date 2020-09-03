@@ -19,7 +19,6 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::post('/rsvp/check', 'RsvpController@check');
 Route::get('/rsvp', 'RsvpController@index');
 Route::post('/rsvp/opslaan', 'RsvpController@update');
-Route::get('/rsvp/lost', 'RsvpController@lost');
 
 // Pagina's
 Route::get('/programma', 'PagesController@programma');
@@ -30,6 +29,10 @@ Route::get('/contact', 'PagesController@contact');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/dashboard/pages', 'Admin\PageController@index')->name('pages');
+Route::get('/dashboard/pages/create', 'Admin\PageController@create')->name('pages');
+Route::get('/dashboard/pages/{id}', 'Admin\PageController@show')->name('pages');
+Route::get('/dashboard/pages/edit/{id}', 'Admin\PageController@edit')->name('pages');
 
 // Logged in Dashboard Routes
 

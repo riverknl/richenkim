@@ -11,7 +11,11 @@
             <hr>
             <div class="card">
                 <div class="card-body">
-
+                    <strong>Ceremonie Meester</strong><br />
+                    Marieke Verkerk<br />
+                    <br/>
+                    E-mail:<br />
+                    cm@richenkim.nl
                 </div>
             </div>
         </div>

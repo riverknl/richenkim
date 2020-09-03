@@ -90,7 +90,7 @@
                             Heb je een uitnodiging van ons gehad? Op de <a href="{{ url('/rsvp') }}">RSVP</a> pagina kan je jouw/jullie persoonlijke code invoeren voor meer
                             informatie over onze trouwdag.
                         </p>
-                        <a href="{{ url('/rsvp') }}" class="btn btn-primary"><i class="fa fa-arrow-right"></i> RSVP</a> <a href="{{ url('/rsvp/lost') }}" class="btn btn-light"><i class="fa fa-arrow-right"></i> Ik ben mijn code kwijt...</a>
+                        <a href="{{ url('/rsvp') }}" class="btn btn-primary"><i class="fa fa-arrow-right"></i> RSVP</a>
 
                     </div>
                 </div>
