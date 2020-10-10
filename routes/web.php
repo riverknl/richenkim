@@ -30,9 +30,9 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard/pages', 'Admin\PageController@index')->name('pages');
-Route::get('/dashboard/pages/create', 'Admin\PageController@create')->name('pages');
-Route::get('/dashboard/pages/{id}', 'Admin\PageController@show')->name('pages');
-Route::get('/dashboard/pages/edit/{id}', 'Admin\PageController@edit')->name('pages');
+Route::get('/dashboard/pages/create', 'Admin\PageController@create')->name('pages.create');
+Route::get('/dashboard/pages/{id}', 'Admin\PageController@show')->name('pages.show');
+Route::get('/dashboard/pages/edit/{id}', 'Admin\PageController@edit')->name('pages.edit');
 
 // Logged in Dashboard Routes
 
