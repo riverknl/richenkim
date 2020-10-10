@@ -12,15 +12,6 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="container text-center">
-                            <div class="row m-5 p-5" style="border-bottom: 1px solid #f9f9f9;">
-                                <div class="col-md-4 offset-2 text-center">
-                                    <h2 style="font-family: 'Amatic SC'; font-size: 3em;">14.45 uur</h2>
-                                    <h3>Aanvang</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <i class="fa fa-clock" style="font-size:5em"></i>
-                                </div>
-                            </div>
                             <div class="row  p-5" style="border-bottom: 1px solid #f9f9f9;">
                                 <div class="col-md-4 offset-2 text-center"><i
                                         class="fa fa-frog" style="font-size:5em"></i></div>
@@ -64,15 +55,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="container text-center">
-                            <div class="row m-5 p-5" style="border-bottom: 1px solid #f9f9f9;">
-                                <div class="col-md-4 offset-2 text-center">
-                                    <h2 style="font-family: 'Amatic SC'; font-size: 3em;">14.45 uur</h2>
-                                    <h3>Aanvang</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <i class="fa fa-clock" style="font-size:5em"></i>
-                                </div>
-                            </div>
+
                             <div class="row  p-5" style="border-bottom: 1px solid #f9f9f9;">
                                 <div class="col-md-4 offset-2 text-center"><i
                                         class="fa fa-frog" style="font-size:5em"></i></div>

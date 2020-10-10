@@ -15,7 +15,7 @@
                     Marieke Verkerk<br />
                     <br/>
                     E-mail:<br />
-                    cm@richenkim.nl
+                    versteeg.marieke@gmail.com
                 </div>
             </div>
         </div>

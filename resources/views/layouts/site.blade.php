@@ -20,7 +20,7 @@
 <div class="container bg-white">
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1 class="site-title">Richard <small>en</small> Kimberley</h1>
+            <h1 class="site-title">Richard <small><span style="color:#8077B0;">+</span></small> Kimberley</h1>
             <p class="weddingdate">27 mei 2021</p>
         </div>
 
