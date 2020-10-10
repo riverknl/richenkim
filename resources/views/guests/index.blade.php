@@ -13,20 +13,51 @@
                         <table class="table table-striped table-hover">
                             <thead>
                             <th>Naam</th>
-                            <th>Aanwezig</th>
+                            <td width="25px">Aanwezig</th>
+                            <td width="25px">RSVP</th>
                             </thead>
                             <tbody>
-                            @foreach($guests as $guest)
+                            @foreach($guests->where('special_guest', 1) as $guest)
                                 <tr>
                                     <td><a href="{{ url('/dashboard/guests/' . $guest->id) }}">{{ $guest->fullName }}</a></td>
-                                    <td width="25px">
+                                    <td>
                                         @if($guest->is_coming == 1)
                                             <i class="fa fa-circle" style="color:green"></i>
                                         @else
                                             <i class="fa fa-circle" style="color:red"></i>
                                         @endif
                                     </td>
+                                    <td>
+                                        {{ $guest->rsvp }}
+                                    </td>
                                 </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                        <h2>Gasten</h2>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                            <th>Naam</th>
+                            <td width="25px">Aanwezig</th>
+                            <td width="25px">RSVP</th>
+                            </thead>
+                            <tbody>
+                            @foreach($guests->where('special_guest', 0) as $guest)
+
+                                <tr>
+                                    <td><a href="{{ url('/dashboard/guests/' . $guest->id) }}">{{ $guest->fullName }}</a></td>
+                                    <td>
+                                        @if($guest->is_coming == 1)
+                                            <i class="fa fa-circle" style="color:green"></i>
+                                        @else
+                                            <i class="fa fa-circle" style="color:red"></i>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        {{ $guest->rsvp }}
+                                    </td>
+                                </tr>
+
                             @endforeach
                             </tbody>
                         </table>
