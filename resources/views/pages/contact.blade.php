@@ -15,7 +15,17 @@
                     Marieke Verkerk<br />
                     <br/>
                     E-mail:<br />
-                    versteeg.marieke@gmail.com
+                    <SCRIPT TYPE="text/javascript">
+                        <!--
+                        // protected email script by Joe Maller
+                        // JavaScripts available at http://www.joemaller.com
+                        // this script is free to use and distribute
+                        // but please credit me and/or link to my site
+
+                        emailE=('versteeg.marieke@' + 'gmail.com')
+                        document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+                        //-->
+                    </script>
                 </div>
             </div>
         </div>

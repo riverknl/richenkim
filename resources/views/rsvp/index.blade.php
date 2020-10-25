@@ -53,6 +53,11 @@
                                     <textarea class="form-control" name="description[{{ $guest->id }}]">{{ $guest->description }}</textarea>
                                 </div>
                             @endif
+
+                            <div class="form-group">
+                                <label>E-mail adres:</label>
+                                <input class="form-control" type="email" name="email[{{ $guest->id }}]" value="{{ $guest->email }}" />
+                            </div>
                         </div>
                     </div>
                 @endforeach

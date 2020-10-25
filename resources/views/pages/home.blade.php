@@ -9,7 +9,6 @@
                         <h5 class="card-title">
                             Hoi
                             @foreach($guests as $guest)
-
                                 @if($loop->count > 1)
                                     @if($loop->first)
                                         {{ $guest->first_name }},
@@ -20,8 +19,7 @@
                                     @endif
                                 @else
                                     {{ $guest->first_name }}
-                                    @endif
-
+                                @endif
                             @endforeach
                             !
                         </h5>

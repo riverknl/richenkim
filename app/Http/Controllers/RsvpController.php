@@ -101,12 +101,31 @@ class RsvpController extends Controller
                                 $guest->description = $request->description[$guest->id];
                             }
                         }
-
+                        if(array_key_exists($guest->id, $request->email)) {
+                            if($request->email[$guest->id] !== null)
+                            {
+                                $guest->email = $request->email[$guest->id];
+                            } else
+                            {
+                                $guest->email = '';
+                            }
+                        }
                         $guest->save();
 
                     } else {
 
+                        if(array_key_exists($guest->id, $request->email)) {
+                            if($request->email[$guest->id] !== null)
+                            {
+                                $guest->email = $request->email[$guest->id];
+                            } else
+                            {
+                                $guest->email = '';
+                            }
+                        }
+
                         $guest->is_coming = 0;
+
                         $guest->save();
 
                     }
@@ -116,6 +135,16 @@ class RsvpController extends Controller
                 // Niemand met deze token is aanwezig
                 // Loop door de gasten en zet ze op niet aanwezig.
                 foreach ($guests as $guest) {
+                    if(array_key_exists($guest->id, $request->email)) {
+                        if($request->email[$guest->id] !== null)
+                        {
+                            $guest->email = $request->email[$guest->id];
+                        } else
+                        {
+                            $guest->email = '';
+                        }
+                    }
+
                     $guest->is_coming = 0;
                     $guest->save();
                 }
