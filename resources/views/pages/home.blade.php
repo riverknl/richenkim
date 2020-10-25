@@ -18,7 +18,9 @@
                                     @else
                                         {{ $guest->first_name }}
                                     @endif
-                                @endif
+                                @else
+                                    {{ $guest->first_name }}
+                                    @endif
 
                             @endforeach
                             !
