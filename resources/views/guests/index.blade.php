@@ -28,7 +28,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        {{ $guest->rsvp }}
+                                        {{ $guest->token }}
                                     </td>
                                 </tr>
                             @endforeach
@@ -54,7 +54,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        {{ $guest->rsvp }}
+                                        {{ $guest->token }}
                                     </td>
                                 </tr>
 
