@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Guest;
+use Illuminate\Support\Facades\DB;
 
 class TestController extends Controller
 {
@@ -14,8 +15,7 @@ class TestController extends Controller
 //        $hashed = Hash::make($password);
 //        echo $password . '<br />' . $hashed;
 
-        $tokens = Guest::all();
-
+        $tokens = DB::table('guests')->select('token')->groupBy('token')->get();
         $token = '';
         foreach($tokens->sortBy('token') as $token)
         {
