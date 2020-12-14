@@ -41,7 +41,7 @@
                                 jullie
                             @else
                                 jou
-                            @endif om 15.00 uur voor de ceremonie in de Limonaia van Villa Agustus in Dordrecht.
+                            @endif om 15.00 uur voor de ceremonie in de Wantijzaal van Villa Agustus in Dordrecht.
                         </p>
                         <p class="card-text">
                             Aansluitend is de receptie van 16.00 tot 18.00 uur om gezellig met ons een borreltje te
