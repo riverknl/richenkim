@@ -11,8 +11,8 @@
             <hr>
             <div class="card">
                 <div class="card-body">
-                    <p>
-                        Bla bla cadeau tips
+                    <p style="text-align:center;">
+                        <i class="fa fa-envelope" style="font-size:100pt; "></i>
                     </p>
                 </div>
             </div>

@@ -11,7 +11,10 @@
             <div class="card">
                 <div class="card-body">
                     <p>
-                        Hier komt praktische informatie..
+                        Adres?
+                    </p>
+                    <p>
+                        Parkeren?
                     </p>
                 </div>
             </div>
