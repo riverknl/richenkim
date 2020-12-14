@@ -3,7 +3,7 @@
 @section('content')
     @if(session('token') !== null)
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-8">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">
@@ -72,6 +72,20 @@
                             @endif
                         </p>
                         <a href="{{ url('/rsvp') }}" class="btn btn-primary"><i class="fa fa-arrow-right"></i> RSVP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Corona update</h2>
+                        <p>
+                            Vul bij de RSVP je e-mail adres in. Zo kunnen we je op de hoogte houden wat betreft de corona maatregelen.
+                        </p>
+                        <p>Als er veranderingen zijn in de planning wat betreft corona zullen we dat natuurlijk ook hier op de website neerzetten.</p>
+                        <p>Houd de website en je mailbox dus in de gaten.</p>
+                        <br />
+                        <p>- Richard & Kimberley</p>
                     </div>
                 </div>
             </div>

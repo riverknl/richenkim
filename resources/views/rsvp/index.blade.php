@@ -33,6 +33,8 @@
                     </div>
                 </div>
             @endif
+            <div class="alert alert-info"><p>Vergeet niet je e-mail adres in te vullen. Zo kunnen we je op de hoogte houden wat betreft de corona maatregelen.</p></div>
+
             <form method="post" action="{{ url('/rsvp/opslaan') }}">
                 @csrf
                 @foreach($guests as $guest)

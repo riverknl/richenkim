@@ -20,7 +20,7 @@
                 <form method="post" action="{{ url('/rsvp/check') }}">
                     @csrf
                     <div class="form-group">
-                        <label>Vul hieronder je RSVP code in.</label>
+                        <label>Vul hieronder je RSVP code in. Met je RSVP code kun je aangeven of je aanwezig bent en krijg je toegang tot meer informatie.</label>
                         <input class="form-control" name="token" required>
                     </div>
                     <div class="form-group">
