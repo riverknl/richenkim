@@ -39,7 +39,7 @@ class TestController extends Controller
             echo $guests->first()->street . '<br />';
             echo $guests->first()->postcode . '<br />';
             echo $guests->first()->city . '<br />';
-            echo '---- <br />';
+            echo '<br />---- <br /><br />';
         }
 
     }
