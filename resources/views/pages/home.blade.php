@@ -1,6 +1,13 @@
 @extends('layouts.site')
 
 @section('content')
+    <div class=" alert alert-danger">
+        <p><strong>Belangrijk!</strong></p>
+        <p>Door alle toestanden met corona en de onzekerheid of onze bruiloft kan doorgaan zoals wij het voor ogen hebben, hebben wij besloten om onze bruiloft te verplaatsen naar <b>27 mei 2022!</b></p>
+        <p>Iedereen zal hier ook nog per post een bericht over ontvangen.</p>
+        <br />
+        <p>Richard & Kimberley</p>
+    </div>
     @if(session('token') !== null)
         <div class="row">
             <div class="col-md-8">
@@ -91,6 +98,7 @@
             </div>
         </div>
     @else
+
         <div class="row">
             <div class="col-md-12 p-3">
                 <div class="card">
